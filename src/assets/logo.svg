@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 933.21 147.66">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .01em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #e80115;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: #24242e;
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke: #f5f5f5;
+        stroke-linecap: round;
+        stroke-width: 11.11px;
+      }
+
+      .cls-9, .cls-6, .cls-10 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6, .cls-10 {
+        stroke: #24242e;
+        stroke-width: 3.04px;
+      }
+
+      .cls-11, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-11, .cls-10 {
+        fill: #f5f5f5;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-12 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 95.51px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-6" d="M141.74,16.65H33.48c-10.58,0-19.16,8.58-19.16,19.16v10.43h146.57v-10.43c0-10.58-8.58-19.16-19.16-19.16Z"/>
+      <path class="cls-10" d="M14.32,46.24v65.61c0,10.58,8.58,19.16,19.16,19.16h108.26c10.58,0,19.16-8.58,19.16-19.16V46.24H14.32Z"/>
+    </g>
+    <g>
+      <path class="cls-3" d="M71.71,79.17l-20.56,9.45,20.56,9.38v9.69l-29.39-14.03v-10.07l29.39-14.03v9.61Z"/>
+      <path class="cls-3" d="M93.81,59.55h8.58l-20.37,58.15h-8.58l20.37-58.15Z"/>
+      <path class="cls-3" d="M132.89,83.58v10.07l-29.39,14.03v-9.69l20.56-9.38-20.56-9.45v-9.61l29.39,14.03Z"/>
+    </g>
+    <g>
+      <circle class="cls-11" cx="35.01" cy="31.45" r="7.31" transform="translate(-1.65 60.95) rotate(-80.76)"/>
+      <circle class="cls-11" cx="58.73" cy="31.45" r="7.31" transform="translate(14.6 81.35) rotate(-76.67)"/>
+      <circle class="cls-11" cx="82.46" cy="31.45" r="7.31" transform="translate(38.18 107.79) rotate(-80.76)"/>
+      <line class="cls-9" x1="104.11" y1="31.45" x2="147.51" y2="31.45"/>
+    </g>
+  </g>
+  <text class="cls-12" transform="translate(181.87 102.05)"><tspan class="cls-4" x="0" y="0">AMANIN</tspan><tspan class="cls-1" x="423.18" y="0">G</tspan><tspan class="cls-2" x="497.77" y="0">.</tspan><tspan class="cls-5" x="522.79" y="0">D</tspan><tspan class="cls-8" x="601.68" y="0">E</tspan><tspan class="cls-7" x="664.81" y="0">V</tspan></text>
+</svg>
