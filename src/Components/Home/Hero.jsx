@@ -1,11 +1,12 @@
 import { Box, Button, Stack, Text, Image } from '@chakra-ui/react';
+import { StarIcon } from '@chakra-ui/icons';
 import { span } from 'framer-motion/client';
 import levImage from '../../assets/leverage.svg';
 
 const Hero = () => {
+    const stars = Array(5).fill(0);
   return (
-    <Box padding={'116px 70px'} backgroundColor={'color.mainBgColor'}>
-      <Stack>
+    <Box padding={'116px 70px'} backgroundColor={'color.mainBgColor'} display={'flex'} flexDirection={'column'} gap={'72px'}>
         <Stack>
           <Text
             fontSize={'66px'}
@@ -25,18 +26,19 @@ const Hero = () => {
             essence and engage your audience. Explore my work to see how I transform ideas into
             digital masterpieces.
           </Text>
+          <Stack
+            display={'flex'}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'center'}
+          >
+            <Button backgroundColor={'color.primary'} color={'color.mainBgColor'}>
+              Book Me Now
+            </Button>
+            <Button backgroundColor={'color.btnPrimary'}>Download CV</Button>
+          </Stack>
         </Stack>
-        <Stack
-          display={'flex'}
-          flexDirection={'row'}
-          alignItems={'center'}
-          justifyContent={'center'}
-        >
-          <Button backgroundColor={'color.primary'} color={'color.mainBgColor'}>
-            Book Me Now
-          </Button>
-          <Button backgroundColor={'color.btnPrimary'}>Download CV</Button>
-        </Stack>
+
         <Stack
           display={'flex'}
           flexDirection={'row'}
@@ -45,10 +47,18 @@ const Hero = () => {
           gap={'32px'}
           w={'70%'}
           m={'auto'}
+          backgroundColor={'color.white'}
         >
           <Stack>
+            <Stack display={'flex'} flexDirection={'row'}>
+                {
+                    stars.map((_, index) => {
+                        return <StarIcon key={index} color={'color.gold'} />
+                    })
+                }
+            </Stack>
             <Text>
-              I leverage a variety of powerful technologies to build engaging, responsive, and
+              I leverage on a variety of powerful technologies to build engaging, responsive, and
               dynamic websites. From HTML and CSS for structuring and styling, to JavaScript and
               React for adding interactivity and creating seamless user experiences
             </Text>
@@ -57,7 +67,6 @@ const Hero = () => {
             <Image src={levImage} w={'800px'} />
           </Stack>
         </Stack>
-      </Stack>
     </Box>
   );
 };

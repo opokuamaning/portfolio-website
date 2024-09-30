@@ -9,5 +9,6 @@ export const colors = {
     mainBgColor: '#F2F5FB',
     primary: '#DD5C5C',
     HeadingColor: '#1A093C',
+    gold: '#FEC84B',
   },
 };
