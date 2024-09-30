@@ -1,6 +1,5 @@
 import { Box, Button, Stack, Image } from '@chakra-ui/react';
-import React from 'react';
-import logo from '../../assets/logo.png';
+import logo from '../../../assets/logo.png';
 
 const Nav = () => {
   return (

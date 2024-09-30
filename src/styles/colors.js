@@ -6,7 +6,7 @@ export const colors = {
     btnPrimary: '#E3EAF5',
     textColor: '#1A093CCC',
     contactBgColor: '#EAEEF5',
-    mainBgColor: '#f2f2f9',
+    mainBgColor: '#F2F5FB',
     primary: '#DD5C5C',
     HeadingColor: '#1A093C',
   },
