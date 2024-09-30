@@ -1,13 +1,13 @@
-import React from 'react'
-import { Stack, Text } from '@chakra-ui/react'
-import Nav from '../Components/Nav/Nav'
+import React from 'react';
+import { Stack, Text } from '@chakra-ui/react';
+import Nav from '../Components/Nav/Nav';
 
 const Home = () => {
   return (
     <Stack>
-        <Nav/>
+      <Nav />
     </Stack>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
