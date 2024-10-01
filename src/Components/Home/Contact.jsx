@@ -29,7 +29,7 @@ const Contact = () => {
         </Text>
       </Stack>
       <Stack>
-        <Stack w={'30%'} borderRadius={'8px'} boxShadow={'sm'}>
+        <Stack w={'35%'} borderRadius={'8px'} boxShadow={'sm'}>
           {contactDetails.map((detail, index) => (
             <Stack key={index} display={'flex'} flexDirection={'row'} padding={'14px 28px'} bg={'color.white'} borderRadius={'8px'}>
               <Stack

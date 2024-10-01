@@ -1,6 +1,7 @@
 import { Box, Divider, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { contactDetails } from '../Data/db';
+import Copyright from '../../utils/Copyright';
 
 const Footer = () => {
   return (
@@ -51,9 +52,9 @@ const Footer = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Divider orientation={'horizontal'} bg={'red'} />
+      <Divider orientation={'horizontal'} />
       <Stack>
-        <Text></Text>
+        <Copyright />
       </Stack>
     </Box>
   );
