@@ -5,6 +5,7 @@ import Projects from '../Components/Home/Projects';
 import MySkills from '../Components/Home/MySkills';
 import MyTools from '../Components/Home/MyTools';
 import Contact from '../Components/Home/Contact';
+import Footer from '../Components/Home/Footer';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <MySkills />
       <MyTools />
       <Contact />
+      <Footer />
     </Stack>
   );
 };

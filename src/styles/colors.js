@@ -12,5 +12,6 @@ export const colors = {
     HeadingColor: '#1A093C',
     gold: '#FEC84B',
     tertiary: '#999999',
+    bgFooter: '#252323',
   },
 };
