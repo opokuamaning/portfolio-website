@@ -2,6 +2,7 @@ export const colors = {
   color: {
     white: '#FFFFFF',
     ash: '#B7B7B7',
+    lightAsh: '#F4F5F5',
     charcoal: '#252323',
     btnPrimary: '#E3EAF5',
     textColor: '#1A093CCC',
@@ -10,5 +11,6 @@ export const colors = {
     primary: '#DD5C5C',
     HeadingColor: '#1A093C',
     gold: '#FEC84B',
+    tertiary: '#999999',
   },
 };
