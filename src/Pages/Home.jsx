@@ -6,10 +6,12 @@ import MySkills from '../Components/Home/MySkills';
 import MyTools from '../Components/Home/MyTools';
 import Contact from '../Components/Home/Contact';
 import Footer from '../Components/Home/Footer';
+import BackToTop from '../utils/BackToTop';
 
 const Home = () => {
   return (
     <Stack>
+      <BackToTop />
       <Nav />
       <Hero />
       <Projects />

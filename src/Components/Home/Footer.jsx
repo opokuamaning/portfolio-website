@@ -10,7 +10,6 @@ const Footer = () => {
       color={'color.white'}
       display={'flex'}
       flexDirection={'column'}
-      gap={'60px'}
     >
           <Stack padding={'60px 190px'} display={'flex'} flexDirection={'row'} justifyContent={'space-between'}>
         <Stack gap={'30px'}>

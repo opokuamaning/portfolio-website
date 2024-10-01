@@ -23,7 +23,7 @@ const Copyright = () => {
 
     
   return (
-    <Box padding={'15px'}>
+    <Box padding={'30px'}>
         <Text fontSize={'14px'} textAlign={'center'}>© {year} All Rights Reserved</Text>
     </Box>
   )
