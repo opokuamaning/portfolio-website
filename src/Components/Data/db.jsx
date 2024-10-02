@@ -10,6 +10,10 @@ import canva from '../../assets/canva.png';
 import { FiPhone } from 'react-icons/fi';
 import { MdOutlineMail } from 'react-icons/md';
 import { TiLocationOutline } from 'react-icons/ti';
+import { IoDiamondOutline } from 'react-icons/io5';
+import { IoPulseOutline } from 'react-icons/io5';
+import { LuGraduationCap } from 'react-icons/lu';
+import { IoTimeOutline } from 'react-icons/io5';
 export const projects = [
   {
     id: 1,
@@ -88,7 +92,7 @@ export const contactDetails = [
   {
     id: 2,
     icon: <MdOutlineMail />,
-      property: 'amaningopoku@gmail.com',
+    property: 'amaningopoku@gmail.com',
     description: 'Email me',
   },
   {
@@ -97,4 +101,33 @@ export const contactDetails = [
     property: 'Accra, Ghana',
     description: 'Location',
   },
+];
+
+
+
+export const hireMeReasons = [
+    {
+        id: 1,
+        icon: <IoDiamondOutline />,
+        title: 'Client-Centric Approach',
+        description: "I ensure every project reflects your brand's unique identity.",
+    },
+    {
+        id: 2,
+        icon: <IoPulseOutline />,
+        title: 'Commitment to Quality',
+        description: 'I ensure your website is responsive, secure, and optimized.',
+    },
+    {
+        id: 3,
+        icon: <LuGraduationCap />,
+        title: 'Proven Skills',
+        description: 'I create visually appealing, user-friendly, high-performance websites.',
+    },
+    {
+        id: 4,
+        icon: <IoTimeOutline />,
+        title: 'Timely Delivery',
+        description: 'I respect deadlines and ensure timely delivery of projects.',
+    },
 ];
