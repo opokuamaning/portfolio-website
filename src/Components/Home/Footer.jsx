@@ -5,14 +5,15 @@ import Copyright from '../../utils/Copyright';
 
 const Footer = () => {
   return (
-    <Box
-      bg={'color.bgFooter'}
-      color={'color.white'}
-      display={'flex'}
-      flexDirection={'column'}
-    >
-          <Stack padding={'60px 190px'} display={'flex'} flexDirection={'row'} justifyContent={'space-between'}>
-        <Stack gap={'30px'}>
+    <Box bg={'color.bgFooter'} color={'color.white'} display={'flex'} flexDirection={'column'}>
+      <Stack
+        padding={{base: '91px 55px', md: '60px 190px'}}
+        display={'flex'}
+        flexDirection={{ base: 'column', md: 'row' }}
+        justifyContent={'space-between'}
+        gap={{base: '50px', md: '0px'}}
+      >
+        <Stack gap={{base: '20px', md: '30px'}}>
           <Stack>
             <Text fontSize={'24px'} fontWeight={'600'}>
               Get In Touch
@@ -51,7 +52,7 @@ const Footer = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Divider orientation={'horizontal'} />
+      <Divider orientation={'horizontal'} width={{base: '80%', md: '100%'}} alignSelf={'center'}/>
       <Stack>
         <Copyright />
       </Stack>

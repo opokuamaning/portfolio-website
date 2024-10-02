@@ -60,7 +60,7 @@ const ContactForm = () => {
               </FormControl>
           </Stack>
           <Stack display={'flex'} justifyContent={'flex-end'} alignItems={'flex-end'}>
-              <Button bg={'color.primary'} color={'color.white'} w={'20%'}>Book Appointment</Button>
+              <Button bg={'color.primary'} color={'color.white'} w={{base: '100%', md: '20%'}}>Book Appointment</Button>
           </Stack>
       </Box>
   )

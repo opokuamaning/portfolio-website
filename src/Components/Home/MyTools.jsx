@@ -6,14 +6,15 @@ import { tools } from '../Data/db';
 const MyTools = () => {
   return (
     <Box
-      padding={'65px 100px'}
+      padding={{base: '92px 25px', md: '65px 100px'}}
       backgroundImage={`linear-gradient(rgba(221, 92, 92, 0.9), rgba(84, 8, 13, 0.9)), url(${bgImage})`}
       backgroundSize={'cover'}
       backgroundPosition='center'
       display={'flex'}
+      flexDirection={{base:'column', md:"row"}}
       gap={'45px'}
     > 
-      <Stack color={'color.white'} w={'50%'}>
+      <Stack color={'color.white'} w={{base:'100%', md: '50%'}}>
         <Text fontSize={'48px'} fontWeight={'600'}>
           My Tools
         </Text>
