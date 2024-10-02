@@ -41,11 +41,11 @@ const Hero = () => {
 
         <Stack
           display={'flex'}
-          flexDirection={'row'}
-          padding={'64px 32px'}
+          flexDirection={{base:'column', md:'row'}}
+          padding={{base: '58px 18px', md: '64px 32px'}}
           alignItems={'center'}
           gap={'32px'}
-          w={'70%'}
+          w={{base: '95%', md:'70%'}}
           m={'auto'}
           backgroundColor={'color.white'}
         >

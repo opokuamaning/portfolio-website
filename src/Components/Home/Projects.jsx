@@ -3,14 +3,14 @@ import { projects } from '../Data/db';
 // import { Link } from 'react-router-dom'
 const Projects = () => {
   return (
-    <Box padding={'82px 72px'} color={'color.HeadingColor'}>
+    <Box padding={{base: '21px 24px', md:'82px 72px'}} color={'color.HeadingColor'}>
       <Text fontSize={'3xl'} fontWeight={'800'}>
         Recent Projects
       </Text>
-      <Stack display={'flex'} flexDirection={'row'} overflowX={'auto'} whiteSpace={'nowrap'} p={2}>
+      <Stack display={'flex'} flexDirection={{base:'column', md:'row'}} overflowX={'auto'} whiteSpace={'nowrap'} justifyContent={'center'} alignItems={'center'} p={2}>
         {projects.map((project, index) => (
           <Link
-            w={'30%'}
+            w={{base: '95%', md: '30%'}}
             h={'auto'}
             key={index}
             href={project.demoUrl}
