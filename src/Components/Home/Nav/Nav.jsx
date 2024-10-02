@@ -7,14 +7,14 @@ const Nav = () => {
       display={'flex'}
       justifyContent={'space-between'}
       alignItems={'center'}
-      padding={'14px 72px'}
+      padding={{ base: '15px 10px', md: '14px 72px' }}
       backgroundColor={'color.white'}
     >
       <Stack>
-        <Image src={logo} alt={'logo'} h={8} />
+        <Image src={logo} alt={'logo'} h={{base: '20px', md:"40px"}} />
       </Stack>
       <Stack>
-        <Button backgroundColor={'color.primary'} color={'color.white'}>
+        <Button backgroundColor={'color.primary'} fontWeight={{base: '300'}} fontSize={{base:'10px', md:'16px'}} color={'color.white'} w={{base: '140px', md:'250px'}}>
           View Photography Portfolio
         </Button>
       </Stack>

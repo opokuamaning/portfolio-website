@@ -6,10 +6,10 @@ import levImage from '../../assets/leverage.svg';
 const Hero = () => {
     const stars = Array(5).fill(0);
   return (
-    <Box padding={'116px 70px'} backgroundColor={'color.mainBgColor'} display={'flex'} flexDirection={'column'} gap={'72px'}>
+    <Box padding={{base: '60px 0', md: '116px 70px'}} backgroundColor={'color.mainBgColor'} display={'flex'} flexDirection={'column'} gap={'72px'}>
         <Stack>
           <Text
-            fontSize={'66px'}
+            fontSize={{base:'27px', md: '66px'}}
             fontWeight={'700'}
             color={'color.HeadingColor'}
             textAlign={'center'}
@@ -20,7 +20,7 @@ const Hero = () => {
             </Text>{' '}
             Web Experiences
           </Text>
-          <Text fontSize={'14px'} fontWeight={'400'} padding={'24px 70px'} textAlign={'center'}>
+          <Text fontSize={'14px'} fontWeight={'400'} padding={{base:'32px 12px', md:'24px 70px'}} textAlign={'center'}>
             Welcome to my web design portfolio, where creativity meets functionality. I specialize
             in creating visually stunning and user-friendly websites that capture your brand's
             essence and engage your audience. Explore my work to see how I transform ideas into
