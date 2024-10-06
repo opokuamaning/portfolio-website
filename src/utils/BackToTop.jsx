@@ -32,16 +32,6 @@ const BackToTop = () => {
       {isVisible && (
         <Button
           onClick={scrollToTop}
-        //   style={{
-        //     position: 'fixed',
-        //     bottom: '20px',
-        //     right: '20px',
-        //     cursor: 'pointer',
-        //     padding: '10px',
-        //     borderRadius: '50%',
-        //     backgroundColor: 'black',
-        //     color: 'white',
-        //   }}
         position={'fixed'}
         bottom={'20px'}
         right={'20px'}

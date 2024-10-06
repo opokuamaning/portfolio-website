@@ -47,6 +47,22 @@ export const projects = [
     technologies: ['WordPress', 'PHP', 'MySQL'],
     demoUrl: 'https://ssb.ctvet.gov.gh/',
   },
+  {
+    id: 3,
+    title: 'CTVET GSDF Website',
+    imageUrl: [gsdfWebsite],
+    // description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
+    technologies: ['WordPress', 'PHP', 'MySQL'],
+    demoUrl: 'https://gsdf.ctvet.gov.gh/',
+  },
+  {
+    id: 4,
+    title: 'CTVET SSB Website',
+    imageUrl: [ssbWebsite],
+    // description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
+    technologies: ['WordPress', 'PHP', 'MySQL'],
+    demoUrl: 'https://ssb.ctvet.gov.gh/',
+  },
 ];
 
 export const tools = [

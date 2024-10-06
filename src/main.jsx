@@ -5,6 +5,7 @@ import { RouterProvider } from 'react-router-dom';
 import theme from './styles';
 import router from './Router';
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ChakraBaseProvider theme={theme}>

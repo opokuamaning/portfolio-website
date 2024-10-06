@@ -1,7 +1,7 @@
 import { Box, Button, Stack, Image } from '@chakra-ui/react';
 import logo from '../../../assets/logo.png';
+import ph_logo from '../../../assets/yamaningph-logo.png'
 import { useNavigate } from 'react-router-dom';
-import { nav } from 'framer-motion/m';
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -14,10 +14,10 @@ const Nav = () => {
       backgroundColor={'color.white'}
     >
       <Stack>
-        <Image src={logo} alt={'logo'} h={{base: '20px', md:"40px"}} />
+        <Image src={ph_logo} alt={'logo'} h={{base: '20px', md:"40px"}} />
       </Stack>
       <Stack>
-        <Button onClick={()=>navigate('/photography')} backgroundColor={'color.primary'} fontWeight={{base: '300'}} fontSize={{base:'10px', md:'16px'}} color={'color.white'} w={{base: '140px', md:'250px'}}>
+        <Button onClick={()=>navigate('/')} backgroundColor={'color.primary'} fontWeight={{base: '300'}} fontSize={{base:'10px', md:'16px'}} color={'color.white'} w={{base: '140px', md:'250px'}}>
           View Photography Portfolio
         </Button>
       </Stack>
