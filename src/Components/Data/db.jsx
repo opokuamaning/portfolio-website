@@ -14,6 +14,8 @@ import { IoDiamondOutline } from 'react-icons/io5';
 import { IoPulseOutline } from 'react-icons/io5';
 import { LuGraduationCap } from 'react-icons/lu';
 import { IoTimeOutline } from 'react-icons/io5';
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import gallery_img1 from '../../assets/Photo_Home/Gallery/gallery-img-1.jpg';
 import gallery_img2 from '../../assets/Photo_Home/Gallery/gallery-img-2.jpg';
 import gallery_img3 from '../../assets/Photo_Home/Gallery/gallery-img-3.jpg';
@@ -266,5 +268,54 @@ export const aboutMe = [
     id: 3,
     title: 'Portfolio Photos',
     description: '+2k',
+  },
+]
+
+export const photoServices = [
+  {
+    id: 1,
+    title: 'Event Photography',
+    description: 'Capturing the energy and excitement of your event.',
+    imageUrl: gallery_img18,
+  },
+  {
+    id: 2,
+    title: 'Sports Photography',
+    description: 'Capturing the intensity and emotion of sports events.',
+    imageUrl: gallery_img7,
+  },
+  {
+    id: 3,
+    title: 'Portrait Photography',
+    description: 'Capturing the beauty and personality of individuals.',
+    imageUrl: gallery_img2,
+  },
+
+  {
+    id: 4,
+    title: 'Wedding Photography',
+    description: 'Capturing the love and joy of your special day.',
+    imageUrl: gallery_img1,
+  }
+]
+
+export const socialLinks = [
+  {
+    id: 1,
+    title: 'Facebook',
+    icon: <FaFacebookF />,
+    url: 'https://www.facebook.com/opoku-amaning',
+  },
+  {
+    id: 2,
+    title: 'Twitter',
+    icon: <FaXTwitter/>,
+    url: 'https://twitter.com/amaningopoku',
+  },
+  {
+    id: 3,
+    title: 'Instagram',
+    icon: <FaInstagram/>,
+    url: 'https://www.instagram.com/amaningopoku_',
   },
 ]

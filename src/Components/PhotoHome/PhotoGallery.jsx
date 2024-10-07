@@ -41,7 +41,7 @@ const PhotoGallery = () => {
   };
   return (
     <Box>
-          <Text fontSize={'40px'} fontWeight={'600'} color={'color.HeadingColor'} padding={'40px 101px'}>Photo Gallery</Text>
+      <Text fontSize={{ base: '30px', md: '40px' }} fontWeight={'600'} color={'color.HeadingColor'} padding={{ base: '21px 24px', md: '40px 101px'}}>Photo Gallery</Text>
           <Box display={'flex'} flexDirection={'column'} overflow={'auto'} maxHeight={'400px'} style={style}>
               
               <Gallery

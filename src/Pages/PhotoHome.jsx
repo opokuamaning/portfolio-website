@@ -5,6 +5,10 @@ import Nav from '../Components/PhotoHome/Nav/Nav';
 import Hero from '../Components/PhotoHome/Hero';
 import PhotoGallery from '../Components/PhotoHome/PhotoGallery';
 import AboutMe from '../Components/PhotoHome/AboutMe';
+import Services from '../Components/PhotoHome/Services';
+import Contact from '../Components/Home/Contact';
+import PhotoContact from '../Components/PhotoHome/PhotoContact';
+import Footer from '../Components/Home/Footer';
 
 const PhotoHome = () => {
   return <Box>
@@ -13,6 +17,9 @@ const PhotoHome = () => {
     <Hero />
     <PhotoGallery />
     <AboutMe />
+    <Services />
+    <PhotoContact />
+    <Footer />
   </Box>;
 };
 

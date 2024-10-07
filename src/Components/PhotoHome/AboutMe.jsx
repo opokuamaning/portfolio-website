@@ -17,14 +17,14 @@ const AboutMe = () => {
         color={'color.white'}
         w={'100%'}
         display={'flex'}
-        flexDir={'row'}
+        flexDir={{base: 'column', md: 'row'}}
         alignItems={'start'}
         justifyContent={'space-between'}
       >
-        <Text fontSize={'48px'} fontWeight={'600'} w={'30%'}>
+        <Text fontSize={{base: '25px', md: '48px'}} fontWeight={'600'} w={{base: '100%', md: '30%'}}>
           About Me
         </Text>
-        <Text fontSize={'13px'} w={'60%'}>
+        <Text fontSize={'13px'} w={{ base: '100%', md: '100%' }}>
           As a passionate photographer, I strive to capture the beauty and emotion of every moment.
           With a focus on sports and dynamic events, my work reflects a commitment to storytelling
           through the lens, allowing viewers to experience the energy and intensity of the subjects
@@ -35,7 +35,7 @@ const AboutMe = () => {
         <Stack
           display={'flex'}
           flexDirection={'row'}
-          flexWrap={'wrap'}
+          // flexWrap={'wrap'}
           color={'color.white'}
           gap={'40px'}
           alignItems={'center'}
@@ -44,9 +44,9 @@ const AboutMe = () => {
           {
             aboutMe.map((item, index) => (
               <Stack key={index} display={'flex'} alignItems={'center'}>
-                <Text fontSize={'40px'} fontWeight={'700'}>{item.description}</Text>
-                <Text>{item.title}</Text>
-                {index < aboutMe.length - 1 && <Divider orientation='vertical' borderColor='white' bg={'red'}/>}
+                <Text fontSize={{base: '20px', md: '40px'}} fontWeight={'700'}>{item.description}</Text>
+                <Text fontSize={{ base: '10px', md: '20px' }}>{item.title}</Text>
+                {index < aboutMe.length - 1 && <Divider orientation='vertical' borderColor='white'/>}
               </Stack>
             ))
           }
