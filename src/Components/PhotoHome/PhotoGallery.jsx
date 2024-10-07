@@ -1,4 +1,4 @@
-import { Box, Image, Text } from '@chakra-ui/react';
+import { Box, Image, Text, Modal, ModalOverlay, ModalCloseButton, ModalContent } from '@chakra-ui/react';
 import React, { useEffect } from 'react';
 import Gallery from 'react-photo-gallery';
 import { getGalleryImages } from '../Data/db';
@@ -11,6 +11,8 @@ const PhotoGallery = () => {
         .map(({value}) => value);
     }
   const [photos, setPhotos] = React.useState([]);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [selectedImage, setSelectedImage] = React.useState(null);
 
   useEffect(() => {
     const fetchGalleryImages = async () => {
@@ -20,6 +22,16 @@ const PhotoGallery = () => {
     };
     fetchGalleryImages();
   }, []);
+
+  const openModal = (photo) => {
+    setSelectedImage(photo);
+    setIsOpen(true);
+  }
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedImage(null);
+  }
   const style = {
     '&::-webkit-scrollbar': {
       display: 'none',
@@ -41,6 +53,7 @@ const PhotoGallery = () => {
                           flexShrink={0}
                           transition={'transform 0.3 ease'}
                           _hover={{ transform: 'scale(1.05' }}
+                          onClick={() => openModal(photo)}
                       >
                           <Image
                               alt=''
@@ -55,6 +68,21 @@ const PhotoGallery = () => {
                   )}
               />
           </Box>
+          <Modal isOpen={isOpen} onClose={closeModal} isCentered>
+              <ModalOverlay />
+              <ModalContent>
+                  <ModalCloseButton />
+                  {selectedImage && (
+                      <Image
+                          src={selectedImage.src}
+                          alt=""
+                          maxW="100%"
+                          maxH="80vh" // Limit height of the image
+                          objectFit="contain" // Ensure the image fits well in the modal
+                      />
+                  )}
+              </ModalContent>
+          </Modal>
     </Box>
   );
 };
