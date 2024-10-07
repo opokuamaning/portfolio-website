@@ -71,7 +71,7 @@ const PhotoGallery = () => {
           <Modal isOpen={isOpen} onClose={closeModal} isCentered>
               <ModalOverlay />
               <ModalContent>
-                  <ModalCloseButton />
+                  <ModalCloseButton color={'color.white'} />
                   {selectedImage && (
                       <Image
                           src={selectedImage.src}
