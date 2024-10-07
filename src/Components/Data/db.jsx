@@ -248,7 +248,23 @@ export const getGalleryImages = async () => {
   return imageData;
 };
 
-// Example usage of getGalleryImages
-getGalleryImages().then((images) => {
-  console.log(images);
-});
+// getGalleryImages().then((images) => {
+//   console.log(images);
+// });
+export const aboutMe = [
+  {
+    id: 1,
+    title: 'Experience',
+    description: '+2 years',
+  },
+  {
+    id: 2,
+    title: 'Customers',
+    description: '+50',
+  },
+  {
+    id: 3,
+    title: 'Portfolio Photos',
+    description: '+2k',
+  },
+]
