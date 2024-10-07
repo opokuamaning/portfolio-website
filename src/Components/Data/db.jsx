@@ -14,6 +14,44 @@ import { IoDiamondOutline } from 'react-icons/io5';
 import { IoPulseOutline } from 'react-icons/io5';
 import { LuGraduationCap } from 'react-icons/lu';
 import { IoTimeOutline } from 'react-icons/io5';
+import gallery_img1 from '../../assets/Photo_Home/Gallery/gallery-img-1.jpg';
+import gallery_img2 from '../../assets/Photo_Home/Gallery/gallery-img-2.jpg';
+import gallery_img3 from '../../assets/Photo_Home/Gallery/gallery-img-3.jpg';
+import gallery_img4 from '../../assets/Photo_Home/Gallery/gallery-img-4.jpg';
+import gallery_img5 from '../../assets/Photo_Home/Gallery/gallery-img-5.jpg';
+import gallery_img6 from '../../assets/Photo_Home/Gallery/gallery-img-6.jpg';
+import gallery_img7 from '../../assets/Photo_Home/Gallery/gallery-img-7.jpg';
+import gallery_img8 from '../../assets/Photo_Home/Gallery/gallery-img-8.jpg';
+import gallery_img9 from '../../assets/Photo_Home/Gallery/gallery-img-9.jpg';
+import gallery_img10 from '../../assets/Photo_Home/Gallery/gallery-img-10.jpg';
+import gallery_img11 from '../../assets/Photo_Home/Gallery/gallery-img-11.jpg';
+import gallery_img12 from '../../assets/Photo_Home/Gallery/gallery-img-12.jpg';
+import gallery_img13 from '../../assets/Photo_Home/Gallery/gallery-img-13.jpg';
+import gallery_img14 from '../../assets/Photo_Home/Gallery/gallery-img-14.jpg';
+import gallery_img15 from '../../assets/Photo_Home/Gallery/gallery-img-15.jpg';
+import gallery_img16 from '../../assets/Photo_Home/Gallery/gallery-img-16.jpg';
+import gallery_img17 from '../../assets/Photo_Home/Gallery/gallery-img-17.jpg';
+import gallery_img18 from '../../assets/Photo_Home/Gallery/gallery-img-18.jpg';
+import gallery_img19 from '../../assets/Photo_Home/Gallery/gallery-img-19.jpg';
+import gallery_img20 from '../../assets/Photo_Home/Gallery/gallery-img-20.jpg';
+import gallery_img21 from '../../assets/Photo_Home/Gallery/gallery-img-21.jpg';
+import gallery_img22 from '../../assets/Photo_Home/Gallery/gallery-img-22.jpg';
+import gallery_img23 from '../../assets/Photo_Home/Gallery/gallery-img-23.jpg';
+import gallery_img24 from '../../assets/Photo_Home/Gallery/gallery-img-24.jpg';
+import gallery_img25 from '../../assets/Photo_Home/Gallery/gallery-img-25.jpg';
+import gallery_img26 from '../../assets/Photo_Home/Gallery/gallery-img-26.jpg';
+import gallery_img27 from '../../assets/Photo_Home/Gallery/gallery-img-27.jpg';
+import gallery_img28 from '../../assets/Photo_Home/Gallery/gallery-img-28.jpg';
+import gallery_img29 from '../../assets/Photo_Home/Gallery/gallery-img-29.jpg';
+
+
+// const images = import.meta.glob('../../assets/Photo_Home/Gallery/*.{jpg,jpeg,png}', {eager: true});
+
+// const getRandomDimension = () => {
+//   const randWidth = Math.floor(Math.random() * 3) + 3;
+//   const randHeight = Math.floor(Math.random() * 3) + 3;
+//   return { width: randWidth, height: randHeight };
+// }
 export const projects = [
   {
     id: 1,
@@ -147,3 +185,70 @@ export const hireMeReasons = [
         description: 'I respect deadlines and ensure timely delivery of projects.',
     },
 ];
+
+// export const photos = Object.values(images).map((image, index) => {
+//   const { width, height } = getRandomDimension();
+//   return {
+//     src: image.default,
+//     width,
+//     height,
+//   }
+// }
+
+// )
+
+const galleryImages = [
+  gallery_img1,
+  gallery_img2,
+  gallery_img3,
+  gallery_img4,
+  gallery_img5,
+  gallery_img6,
+  gallery_img7,
+  gallery_img8,
+  gallery_img9,
+  gallery_img10,
+  gallery_img11,
+  gallery_img12,
+  gallery_img13,
+  gallery_img14,
+  gallery_img15,
+  gallery_img16,
+  gallery_img17,
+  gallery_img18,
+  gallery_img19,
+  gallery_img20,
+  gallery_img21,
+  gallery_img22,
+  gallery_img23,
+  gallery_img24,
+  gallery_img25,
+  gallery_img26,
+  gallery_img27,
+  gallery_img28,
+  gallery_img29,
+];
+
+const loadImageDimensions = (src) => {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.src = src;
+    img.onload = () => {
+      resolve({
+        src,
+        width: img.width,
+        height: img.height,
+      });
+    };
+  });
+};
+
+export const getGalleryImages = async () => {
+  const imageData = await Promise.all(galleryImages.map(loadImageDimensions));
+  return imageData;
+};
+
+// Example usage of getGalleryImages
+getGalleryImages().then((images) => {
+  console.log(images);
+});
