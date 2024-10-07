@@ -23,7 +23,6 @@ const Projects = () => {
       <Text fontSize={'3xl'} fontWeight={'800'}>
         Recent Projects
       </Text>
-      <Button onClick={handlePrev} isDisabled={currentSlide === 0}><ArrowBackIcon /></Button>
       <Stack display={'flex'} flexDirection={{base:'column', md:'row'}} overflowX={'auto'} whiteSpace={'nowrap'} justifyContent={'center'} alignItems={'center'} p={2}>
         
         {projects.map((project, index) => (
@@ -60,7 +59,6 @@ const Projects = () => {
         ))}
         
       </Stack>
-      <Button onClick={handlePrev} isDisabled={currentSlide === projects.length - 1}><ArrowForwardIcon /></Button>
     </Box>
   );
 };
