@@ -78,7 +78,7 @@ const PhotoGallery = () => {
                           alt=""
                           maxW="100%"
                           maxH="80vh" // Limit height of the image
-                          objectFit="contain" // Ensure the image fits well in the modal
+                        //   objectFit="contain" // Ensure the image fits well in the modal
                       />
                   )}
               </ModalContent>
