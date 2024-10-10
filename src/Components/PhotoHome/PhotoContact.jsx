@@ -1,7 +1,9 @@
 import React from 'react';
-import { Stack, FormControl, Select, Input, FormErrorMessage, Box, Textarea, Button } from '@chakra-ui/react';
+import { Stack, FormControl, Select, Input, FormErrorMessage, Box, Textarea, Button, Text } from '@chakra-ui/react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+import { socialLinks } from '../Data/db';
+import PhotoContactForm from './PhotoContactForm';
 
 const ContactForm = () => {
   // Define form validation schema
@@ -44,121 +46,27 @@ const ContactForm = () => {
   };
 
   return (
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={handleSubmit}
-    >
-      {({ isSubmitting }) => (
-        <Form>
-          <Box display={'flex'} flexDirection={'column'} gap={'20px'}>
-            <Stack width={'100%'} spacing={6} direction={{ base: 'column', md: 'row' }}>
-              <FormControl>
-                <Field name="fullName">
-                  {({ field, form }) => (
-                    <Input
-                      {...field}
-                      id="fullName"
-                      type="text"
-                      placeholder="Full Name"
-                      bg={'color.white'}
-                      h={'60px'}
-                      isInvalid={form.errors.fullName && form.touched.fullName}
-                    />
-                  )}
-                </Field>
-                <FormErrorMessage name="fullName" />
-              </FormControl>
-
-              <FormControl>
-                <Field name="email">
-                  {({ field, form }) => (
-                    <Input
-                      {...field}
-                      id="email"
-                      type="email"
-                      placeholder="Your Email"
-                      bg={'color.white'}
-                      h={'60px'}
-                      isInvalid={form.errors.email && form.touched.email}
-                    />
-                  )}
-                </Field>
-                <FormErrorMessage name="email" />
-              </FormControl>
-            </Stack>
-
-            <Stack width={'100%'} spacing={6} direction={{ base: 'column', md: 'row' }}>
-              <FormControl>
-                <Field name="phoneNumber">
-                  {({ field, form }) => (
-                    <Input
-                      {...field}
-                      id="phoneNumber"
-                      type="tel"
-                      placeholder="Phone Number"
-                      bg={'color.white'}
-                      h={'60px'}
-                      isInvalid={form.errors.phoneNumber && form.touched.phoneNumber}
-                    />
-                  )}
-                </Field>
-                <FormErrorMessage name="phoneNumber" />
-              </FormControl>
-
-              <FormControl>
-                <Field name="projectType" as="select">
-                  {({ field, form }) => (
-                    <Select
-                      {...field}
-                      placeholder="Project type"
-                      h={'60px'}
-                      bg={'color.white'}
-                      isInvalid={form.errors.projectType && form.touched.projectType}
-                    >
-                      <option value="option1">Option 1</option>
-                      <option value="option2">Option 2</option>
-                      <option value="option3">Option 3</option>
-                    </Select>
-                  )}
-                </Field>
-                <FormErrorMessage name="projectType" />
-              </FormControl>
-            </Stack>
-
-            <Stack width={'100%'} spacing={6} direction={{ base: 'column', md: 'row' }}>
-              <FormControl>
-                <Field name="message">
-                  {({ field, form }) => (
-                    <Textarea
-                      {...field}
-                      id="message"
-                      placeholder="Message"
-                      h={'120px'}
-                      bg={'color.white'}
-                      isInvalid={form.errors.message && form.touched.message}
-                    />
-                  )}
-                </Field>
-                <FormErrorMessage name="message" />
-              </FormControl>
-            </Stack>
-
-            <Stack display={'flex'} justifyContent={'flex-end'} alignItems={'flex-end'}>
-              <Button
-                type="submit"
-                isLoading={isSubmitting}
-                bg={'color.primary'}
-                color={'color.white'}
-                w={{ base: '100%', md: '30%' }}
-              >
-                Book Appointment
-              </Button>
-            </Stack>
-          </Box>
-        </Form>
-      )}
-    </Formik>
+   <Box padding={'80px 108px'}>
+    <Stack display={'flex'} flexDir={'row'} justifyContent={'space-between'}>
+      <Stack w={'75%'}>
+          <Text fontSize={'60px'} fontWeight={'700'}>Get in touch with us. We're here to assist you.</Text>
+      </Stack>
+      <Stack>
+        {
+          socialLinks.map((link, index) => {
+            return (
+              <Stack key={index} display={'flex'} alignItems={'center'} border={'1px solid'} borderRadius={'50%'} padding={'10px'}>
+                <Text fontSize={'2xl'}>{link.icon}</Text>
+              </Stack>
+            )
+          })
+        }
+      </Stack>
+    </Stack>
+    <Stack>
+      <PhotoContactForm />
+    </Stack>
+   </Box>
   );
 };
 
