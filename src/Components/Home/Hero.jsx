@@ -4,18 +4,29 @@ import { span } from 'framer-motion/client';
 import levImage from '../../assets/leverage.svg';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import cv from '../../assets//Prince_Amaning_CV.pdf';
+import { useNavigate } from 'react-router-dom';
 
 const stars = Array(5).fill(0);
 const MotionBox = motion.create(Box);
 const MotionText = motion.create(Text);
 const MotionButton = motion.create(Button);
 const Hero = () => {
+  const navigate = useNavigate();
+
+  console.log(cv, 'my cv');
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
-    <Box padding={{ base: '60px 0', md: '116px 70px' }} backgroundColor={'color.mainBgColor'} display={'flex'} flexDirection={'column'} gap={'72px'}>
+    <Box
+      padding={{ base: '60px 0', md: '116px 70px' }}
+      backgroundColor={'color.mainBgColor'}
+      display={'flex'}
+      flexDirection={'column'}
+      gap={'72px'}
+    >
       <Stack>
         <MotionText
           ref={ref}
@@ -33,13 +44,19 @@ const Hero = () => {
           </Text>{' '}
           Web Experiences
         </MotionText>
-        <MotionText fontSize={'14px'} fontWeight={'400'} padding={{ base: '32px 12px', md: '24px 70px' }} textAlign={'center'} initial={{ opacity: 0, y: 20 }}
+        <MotionText
+          fontSize={'14px'}
+          fontWeight={'400'}
+          padding={{ base: '32px 12px', md: '24px 70px' }}
+          textAlign={'center'}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}>
-          Welcome to my web design portfolio, where creativity meets functionality. I specialize
-          in creating visually stunning and user-friendly websites that capture your brand's
-          essence and engage your audience. Explore my work to see how I transform ideas into
-          digital masterpieces.
+          transition={{ duration: 0.5 }}
+        >
+          Welcome to my web design portfolio, where creativity meets functionality. I specialize in
+          creating visually stunning and user-friendly websites that capture your brand's essence
+          and engage your audience. Explore my work to see how I transform ideas into digital
+          masterpieces.
         </MotionText>
         <Stack
           display={'flex'}
@@ -47,16 +64,29 @@ const Hero = () => {
           alignItems={'center'}
           justifyContent={'center'}
         >
-          <MotionButton backgroundColor={'color.primary'} color={'color.mainBgColor'}
+          <MotionButton
+            backgroundColor={'color.primary'}
+            color={'color.mainBgColor'}
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}>
+            transition={{ duration: 0.5 }}
+          >
             Book Me Now
           </MotionButton>
-          <MotionButton backgroundColor={'color.btnPrimary'}
+          <MotionButton
+            backgroundColor={'color.btnPrimary'}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}>Download CV</MotionButton>
+            transition={{ duration: 0.5 }}
+            as='a'
+            href={
+              'https://docs.google.com/document/d/1qgPNnXpDEwV2yW9nNswd6DNbAGnl1va-HH-zYArF6F0/edit?usp=sharing'
+            }
+            download
+            target='_blank'
+          >
+            Download CV
+          </MotionButton>
         </Stack>
       </Stack>
 
@@ -72,16 +102,14 @@ const Hero = () => {
       >
         <Stack>
           <Stack display={'flex'} flexDirection={'row'}>
-            {
-              stars.map((_, index) => {
-                return <StarIcon key={index} color={'color.gold'} />
-              })
-            }
+            {stars.map((_, index) => {
+              return <StarIcon key={index} color={'color.gold'} />;
+            })}
           </Stack>
           <Text>
             I leverage on a variety of powerful technologies to build engaging, responsive, and
-            dynamic websites. From HTML and CSS for structuring and styling, to JavaScript and
-            React for adding interactivity and creating seamless user experiences
+            dynamic websites. From HTML and CSS for structuring and styling, to JavaScript and React
+            for adding interactivity and creating seamless user experiences
           </Text>
         </Stack>
         <Stack>

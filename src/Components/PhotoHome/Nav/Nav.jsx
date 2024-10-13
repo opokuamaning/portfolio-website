@@ -18,7 +18,7 @@ const Nav = () => {
       </Stack>
       <Stack>
         <Button onClick={()=>navigate('/')} backgroundColor={'color.primary'} fontWeight={{base: '300'}} fontSize={{base:'10px', md:'16px'}} color={'color.white'} w={{base: '140px', md:'250px'}}>
-          View Photography Portfolio
+          View Web Design Portfolio
         </Button>
       </Stack>
     </Box>
