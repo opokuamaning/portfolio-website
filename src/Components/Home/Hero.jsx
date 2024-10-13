@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Text, Image } from '@chakra-ui/react';
+import { Box, Button, Stack, Text, Image, Link } from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
 import { span } from 'framer-motion/client';
 import levImage from '../../assets/leverage.svg';
@@ -70,6 +70,8 @@ const Hero = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
+            as={'a'}
+            href='#contactForm'
           >
             Book Me Now
           </MotionButton>

@@ -17,7 +17,9 @@ const Home = () => {
       <Projects />
       <MySkills />
       <MyTools />
-      <Contact />
+      <section id='contactForm'>
+        <Contact />
+      </section>
       <Footer />
     </Stack>
   );
