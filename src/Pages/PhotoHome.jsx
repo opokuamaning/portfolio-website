@@ -18,7 +18,9 @@ const PhotoHome = () => {
     <PhotoGallery />
     <AboutMe />
     <Services />
-    <PhotoContact />
+    <section id='contactForm'>
+      <PhotoContact />
+    </section>
     <Footer />
   </Box>;
 };

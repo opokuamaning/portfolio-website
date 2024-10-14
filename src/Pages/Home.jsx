@@ -9,6 +9,9 @@ import Footer from '../Components/Home/Footer';
 import BackToTop from '../utils/BackToTop';
 
 const Home = () => {
+  const style = {
+    
+  }
   return (
     <Stack>
       <BackToTop />

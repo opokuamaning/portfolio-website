@@ -5,6 +5,10 @@ import heroImg2 from '../../../src/assets/Photo_Home/hero_img2.png';
 import heroImg3 from '../../../src/assets/Photo_Home/hero_img3.png';
 
 const Hero = () => {
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById('contactForm');
+    formSection.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <Box
       padding={{ base: '60px 0', md: '116px 70px' }}
@@ -31,7 +35,7 @@ const Hero = () => {
           our portfolio and let us capture the beauty of your special moments with our unique touch.
         </Text>
         <Stack display={'flex'} alignItems={{base: 'center', md: 'start'}}>
-          <Button backgroundColor={'color.primary'} color={'color.white'} w={{base: '90%', md: '30%'}} >
+          <Button backgroundColor={'color.primary'} color={'color.white'} w={{ base: '90%', md: '30%' }} onClick={handleScrollToForm}>
             Book Me Now
           </Button>
         </Stack>

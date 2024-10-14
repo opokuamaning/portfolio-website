@@ -18,6 +18,11 @@ const Hero = () => {
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById('contactForm');
+    formSection.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <Box
@@ -70,8 +75,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            as={'a'}
-            href='#contactForm'
+            onClick={handleScrollToForm}
           >
             Book Me Now
           </MotionButton>
