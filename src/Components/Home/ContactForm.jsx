@@ -9,16 +9,18 @@ const ContactForm = () => {
             email: '',
             phoneNumber: '',
             projectType: '',
+            message: '',
         },
         validationSchema: Yup.object().shape({
             fullName: Yup.string().required('Full Name is required'),
             email: Yup.string().email('Invalid email address').required('Email is required'),
             phoneNumber: Yup.string().required('Phone Number is required'),
             projectType: Yup.string().required('Please select a project type'),
+            message: Yup.string().required('Required'),
         }),
         onSubmit: async (values, { setSubmitting }) => {
             try {
-                const response = await fetch('https://formspree.io/xanywald', {
+                const response = await fetch('https://formspree.io/f/xanywald', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -95,17 +97,26 @@ const ContactForm = () => {
                       <FormErrorMessage>{formik.errors.phoneNumber}</FormErrorMessage>
               </FormControl>
 
-              <FormControl>
-                  {/* <FormLabel htmlFor='email'>Your Email</FormLabel> */}
-                  <Select placeholder='Project type' h={'60px'} color={'color.'} bg={'color.white'}>
-                          <option value='Web Application'>Web Application</option>
-                          <option value='Portfolio Website'>Portfolio Website</option>
-                          <option value='Corporate Website'>Corporate Website</option>
-                          <option value='E-commerce Website'>E-commerce Website</option>
-                          <option value='Educational Website'>Educational Website</option>
-                  </Select>
-                  <FormErrorMessage></FormErrorMessage>
-              </FormControl>
+                  <FormControl isInvalid={formik.touched.projectType && !!formik.errors.projectType}>
+                      <Select
+                          id="projectType"
+                          name="projectType"
+                          placeholder="Project type"
+                          h={'60px'}
+                          bg={'color.white'}
+                          value={formik.values.projectType}
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                      >
+                          <option value="Web Application">Web Application</option>
+                          <option value="Portfolio Website">Portfolio Website</option>
+                          <option value="Corporate Website">Corporate Website</option>
+                          <option value="E-commerce Website">E-commerce Website</option>
+                          <option value="Educational Website">Educational Website</option>
+                      </Select>
+                      <FormErrorMessage>{formik.errors.projectType}</FormErrorMessage>
+                  </FormControl>
+
           </Stack>
           <Stack width={'100%'} spacing={6} direction={{ base: 'column', md: 'row' }}>
                   <FormControl isInvalid={formik.touched.message && formik.errors.message}>

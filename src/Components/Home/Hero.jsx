@@ -86,7 +86,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             as='a'
             href={
-              'https://docs.google.com/document/d/1qgPNnXpDEwV2yW9nNswd6DNbAGnl1va-HH-zYArF6F0/edit?usp=sharing'
+              'https://drive.google.com/file/d/1-A3Wb-wvXBYUnY2bLtuz6xg_6m3JP3hO/view?usp=sharing'
             }
             download
             target='_blank'

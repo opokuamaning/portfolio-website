@@ -23,9 +23,6 @@ const PhotoContactForm = () => {
       serviceType: '',
       message: '',
     },
-    // onSubmit: (values) => {
-
-    // },
     validationSchema: Yup.object({
       firstName: Yup.string().required('Required'),
       lastName: Yup.string().required('Required'),
