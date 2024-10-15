@@ -1,4 +1,3 @@
-import React from 'react';
 import { Stack, Box, Text } from '@chakra-ui/react';
 import { socialLinks } from '../Data/db';
 import PhotoContactForm from './PhotoContactForm';
