@@ -1,5 +1,4 @@
 import { Box, Divider, Stack, Text } from '@chakra-ui/react';
-import React from 'react';
 import { contactDetails } from '../Data/db';
 import Copyright from '../../utils/Copyright';
 import { useNavigate } from 'react-router-dom';
