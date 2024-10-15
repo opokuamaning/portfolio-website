@@ -56,7 +56,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Box padding={{ base: '28px', md: '80px 108px' }}>
+    <Box padding={{ base: '28px', md: '80px 108px' }} display={'flex'} flexDirection={'column'} gap={'30px'}>
       <Stack
         display={'flex'}
         flexDirection={{base: 'column', md: 'row'}}
