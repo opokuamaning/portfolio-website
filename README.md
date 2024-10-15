@@ -10,13 +10,18 @@ Interactive Gallery: A dynamic photo gallery that rearranges images randomly upo
 Contact Form: Visitors can reach out for bookings, making it easy to engage with potential clients.
 Smooth Animations: Built with Framer Motion to enhance user experience through eye-catching transitions.
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](/src/assets/logo.png)
 
 
 ## Authors
 
 - [@opokuamaning](https://github.com/opokuamaning)
 - [@akuaserwaad](https://github.com/akuaserwaad)
+
+## Screenshots
+
+![Photography Home Page Screenshot](/src/assets/Screenshots/Photography_SC.png)
+![Web Design Home Page Screenshot](/src/assets/Screenshots/Webdesign_SC.png)
 
 
 ## Usage
@@ -80,10 +85,6 @@ Install my-project with yarn
 ```bash
   http://localhost:5173/
 ```
-    
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
 ## Lessons Learned
