@@ -18,7 +18,7 @@ const ContactForm = () => {
       >
         <Stack w={'75%'}>
           <Text fontSize={{ base: '20px', md: '60px' }} fontWeight={'700'}>
-            Get in touch with us. We're here to assist you.
+            Get in touch with us. We are here to assist you.
           </Text>
         </Stack>
         <Stack flexDirection={{ base: 'row', md: 'column' }}>
